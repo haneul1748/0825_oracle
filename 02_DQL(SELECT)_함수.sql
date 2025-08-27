@@ -706,7 +706,17 @@ SELECT
 	   COUNT(*) 
   FROM 
    	   EMPLOYEE;
-
+ WHERE
+       BONUS IS NOT NULL;
+  
+  
+-- 현재 사원들이 속해있는 부서 개수
+-- COUNT(DISTINCT 컬럼명) : 제시한 해당 컬럼값이 중복값이 존재할 경우 하나롬나 세서반환
+  
+SELECT
+       COUNT(DISTINCT DEPT_CODE)
+  FROM    
+       EMPLOYEE;
 
 
 
