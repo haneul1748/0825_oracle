@@ -145,6 +145,8 @@ CREATE OR REPLACE VIEW VW_EMP(사원명, 연봉, 근무년수)
 	 	     , EXTRACT(YEAR FROM SYSDATE) - EXTRACT(YEAR FROM HIRE_DATE) 
   		  FROM 
        		   EMPLOYEE;
+--뷰 삭제하기
+DROP VIEW 뷰이름;
 ----------------------------------------------------------------------------
 
 
