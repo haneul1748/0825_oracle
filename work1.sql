@@ -1,0 +1,66 @@
+CREATE TABLE TB_STUDENT(
+	STUDENT_ID NUMBER PRIMARY KEY,
+	STUDENT_NAME NVARCHAR2(5) NOT NULL,
+	ENROLL_DATE DATE NOT NULL
+);
+
+INSERT
+  INTO
+  	   TB_STUDENT
+VALUES
+	   (
+	   1
+	 , '홍길동'
+	 , SYSDATE  	
+	   );
+COMMIT;
+
+SELECT * FROM TB_STUDENT;
+
+SELECT
+  	   STUDENT_ID
+  	 , STUDENT_NAME
+  	 , ENROLL_DATE
+ FROM
+ 	  TB_STUDENT
+ ORDER
+	BY 
+	   ENROLL_DATE DESC;
+
+SELECT * FROM EMPLOYEE;
+
+INSERT
+  INTO 
+  	   EMPLOYEE
+VALUES 
+	   (
+	   226
+     , '김하늘'
+	 , '011019-3175871'
+	 , 'nosaru@naver.com'
+	 , '01063904376'
+	 , 'D7'
+	 , 'J7'
+	 , 'S5'
+	 , 5000000
+	 , 0.1
+	 , '201'
+	 , SYSDATE
+	 , ''
+	 , 'Y'
+	   );
+
+
+
+
+
+
+
+
+
+
+CREATE TABLE TB_PLANT(
+	
+	
+	
+);
