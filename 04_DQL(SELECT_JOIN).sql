@@ -127,7 +127,7 @@ SELECT
   -->	FROM 절에는 조회하고자 하는 테이블을 , 를 이용해서 전부 다 나열
   --> WHERE 절에는 매칭을 시키고자 하는 컬럼명에 대한 조건을 제시함( = )
 
-  -- 전체 사원들의 사원명, 부서도드, 부서명을 한꺼번에 조회
+  -- 전체 사원들의 사원명, 부서코드, 부서명을 한꺼번에 조회
   SELECT * FROM EMPLOYEE; -- EMP_NAME, DEPT_CODE
   SELECT * FROM DEPARTMENT; -- DEPT_ID, DEPT_TITLE
   
